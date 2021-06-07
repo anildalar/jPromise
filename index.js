@@ -19,7 +19,9 @@ console.log('Its works');
 // let promiseObj = new PromiseClass(cbfn);
 
 //global variable
-let v = false;
+let v = true;
+// let classObj = new Class();
+
 let promiseObj = new Promise(function(resolve, reject){
     if(v == true){
         resolve('The value is true');
@@ -35,6 +37,7 @@ console.log(promiseObj);
 
     promiseObject.then(onFulfilled, onRejected);
  */
+// pObj.then().catch().finally();
 promiseObj.then(function(value){
     console.log('The Async Operation is succesful '+value);
 }).catch(function(value){
